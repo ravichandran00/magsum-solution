@@ -28,9 +28,11 @@ const Footer: React.FC = () => {
             <h4 className="font-semibold text-lg mb-4">Solutions</h4>
             <ul className="space-y-2">
               <li><Link to="/magnifyze" className="text-gray-300 hover:text-white transition-colors">Magnifyze</Link></li>
-              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Proneurz</Link></li>
-              <li><Link to="/magnifyze" className="text-gray-300 hover:text-white transition-colors">Virtual CXO</Link></li>
+              <li><Link to="/proneurz" className="text-gray-300 hover:text-white transition-colors">Proneurz</Link></li>
+              <li><Link to="/virtual-cxo" className="text-gray-300 hover:text-white transition-colors">Virtual CXO</Link></li>
               <li><Link to="/magnifyze" className="text-gray-300 hover:text-white transition-colors">Strategy Consulting</Link></li>
+               <li><Link to="/advisory-panel" className="text-gray-300 hover:text-white transition-colors">Advisory Panel</Link></li>
+                 <li><Link to="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
             </ul>
           </div>
           
@@ -50,9 +52,11 @@ const Footer: React.FC = () => {
           <p className="text-gray-400 mb-4 md:mb-0">
             &copy; {currentYear} Magsum Solutions. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6">
-            <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+          <div className="flex items-center space-x-6 w-full">
+             <ul className="w-full flex justify-center space-between space-x-6">
+                <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>                  
+           </ul>
           </div>
         </div>
       </div>

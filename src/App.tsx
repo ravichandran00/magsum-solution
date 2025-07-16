@@ -37,7 +37,7 @@ const App = () => (
             <Route path="/terms-and-conditions" element={<Terms />} />
             <Route path="/privacy-policy" element={<Privacy />} />
             <Route path="/faq" element={<Faq />} />
-            <Route path="/advisorypanel" element={<AdvisoryPanel />} />
+            <Route path="/advisory-panel" element={<AdvisoryPanel />} />
              <Route path="/virtual-cxo" element={<VirtualCxo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

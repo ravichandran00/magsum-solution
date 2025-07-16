@@ -1,71 +1,103 @@
-import React from "react";
+import React from 'react';
 
 const teamMembers = [
   {
-    name: "Dr. Arjun Menon",
-    designation: "Chief Medical Advisor",
-    description: "Expert in clinical strategy and healthcare innovation.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: 'Azunyan U. Wu',
+    role: 'Founder & CEO',
+    desc: 'Used to work at IBM but quit because of robotz',
+    img: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
   {
-    name: "Ms. Priya Sharma",
-    designation: "Financial Advisor",
-    description: "Specializes in investment planning and risk assessment.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: 'Silverstone Gray',
+    role: 'Lead Design',
+    desc: 'Hello, I like not doing anything at all. Let’s DM.',
+    img: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
   {
-    name: "Mr. Rakesh Nair",
-    designation: "Technology Consultant",
-    description: "Advises on enterprise tech and digital transformation.",
-    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    name: 'Alan D. Watts',
+    role: 'Lead Engineering',
+    desc: 'Prodigy with record-breaking 176 IQ and many awards.',
+    img: 'https://randomuser.me/api/portraits/women/68.jpg',
   },
   {
-    name: "Dr. Meera Iyer",
-    designation: "Research Advisor",
-    description: "Guides R&D efforts in pharmaceuticals and biotech.",
-    image: "https://randomuser.me/api/portraits/women/25.jpg",
+    name: 'Oarack Babama',
+    role: 'Lead Finance',
+    desc: 'Hello, I like money. It is the only purpose of in my life.',
+    img: 'https://randomuser.me/api/portraits/men/83.jpg',
   },
   {
-    name: "Mr. Anil Kapoor",
-    designation: "Legal Advisor",
-    description: "Provides strategic legal counsel and compliance.",
-    image: "https://randomuser.me/api/portraits/men/54.jpg",
+    name: 'Azunyan U. Wu',
+    role: 'Founder & CEO',
+    desc: 'Used to work at IBM but quit because of robotz',
+    img: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
   {
-    name: "Ms. Sunita Rao",
-    designation: "Marketing Strategist",
-    description: "Leads brand positioning and market outreach.",
-    image: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: 'Silverstone Gray',
+    role: 'Lead Design',
+    desc: 'Hello, I like not doing anything at all. Let’s DM.',
+    img: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
+  {
+    name: 'Alan D. Watts',
+    role: 'Lead Engineering',
+    desc: 'Prodigy with record-breaking 176 IQ and many awards.',
+    img: 'https://randomuser.me/api/portraits/women/68.jpg',
+  },
+  {
+    name: 'Oarack Babama',
+    role: 'Lead Finance',
+    desc: 'Hello, I like money. It is the only purpose of in my life.',
+    img: 'https://randomuser.me/api/portraits/men/83.jpg',
+  },
+  
+  
 ];
 
 const AdvisoryProfile = () => {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-10 relative overflow-hidden">
-    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-     
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {teamMembers.map((member, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-2xl overflow-hidden shadow-md transform transition duration-300 hover:scale-105 hover:shadow-[0_10px_25px_rgba(59,130,246,0.5)]"
-          >
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-full h-60 object-cover"
-            />
-            <div className="p-6 text-center">
-              <h3 className="text-xl font-semibold text-gray-800">
-                {member.name}
-              </h3>
-              <p className="text-indigo-600 font-medium">{member.designation}</p>
-              <p className="text-gray-600 mt-2 text-sm">{member.description}</p>
+    <section className="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden text-center">
+      <div className="max-w-5xl mx-auto">
+        <p className="text-sm text-indigo-500 font-semibold mb-2">We’re Hiring!</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let’s Meet Our Team</h2>
+        <p className="text-gray-500 max-w-2xl mx-auto mb-6">
+          Gravida in fermentum et sollicitudin ac orci phasellus egestas. Molestie a iaculis at erat pellentesque adipiscing commodo.
+        </p>
+
+        <div className="flex justify-center gap-4 mb-12">
+          <button className="px-4 py-2 border border-magsum-purple rounded-full text-magsum-purple hover:bg-magsum-blue hover:border-magsum-blue hover:text-white transition">About Us</button>
+          <button className="px-4 py-2 bg-magsum-purple text-white rounded-full hover:bg-magsum-purple/90 transition">Job Openings</button>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md hover:shadow-xl transform hover:scale-105 transition p-6 flex flex-col items-center text-center mt-7 mb-7"
+            >
+              <img
+                src={member.img}
+                alt={member.name}
+                className="w-20 h-20 rounded-full mb-4 object-cover"
+              />
+              <h3 className="text-lg font-semibold">{member.name}</h3>
+              <p className="text-magsum-purple text-sm font-medium">{member.role}</p>
+              <p className="text-gray-500 text-sm mt-2">{member.desc}</p>
+
+              <div className="flex gap-3 mt-4">
+                <a href="#" className="text-gray-400 hover:text-magsum-purple transition">
+                  <i className="fab fa-x-twitter"></i>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-magsum-purple transition">
+                  <i className="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-magsum-purple transition">
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };
