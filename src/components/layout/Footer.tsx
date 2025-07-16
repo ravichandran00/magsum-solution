@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
           <p className="text-gray-400 mb-4 md:mb-0">
             &copy; {currentYear} Magsum Solutions. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6 w-full">
+          <div className="flex items-center space-x-6 w-full md:w-auto">
              <ul className="w-full flex justify-center space-between space-x-6">
                 <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
                 <li><Link to="/terms-and-conditions" className="text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>                  
