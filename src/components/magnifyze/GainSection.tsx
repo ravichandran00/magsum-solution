@@ -1,6 +1,6 @@
 import { CheckCircle } from 'lucide-react'
 import React from 'react'
-import gainImage from '../assets/gain-section-image.jpg'
+import gainImage from '../../assets/gain-image.jpg'
 
 const GainSection:React.FC = () => {
   return (
