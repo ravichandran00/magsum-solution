@@ -1,5 +1,6 @@
 import { CheckCircle } from 'lucide-react'
 import React from 'react'
+import gainImage from '../assets/gain-section-image.jpg'
 
 const GainSection:React.FC = () => {
   return (
@@ -43,7 +44,7 @@ const GainSection:React.FC = () => {
         {/* Image Grid */}
         <div className="md:w-1/2 w-full">
           
-          <img src="../src/assets/gain-img.png" alt="img5" className="w-full h-auto object-cover rounded-xl" />
+          <img src={gainImage} alt="img5" className="w-full h-auto object-cover rounded-xl" />
         </div>
       </div>
     </section>

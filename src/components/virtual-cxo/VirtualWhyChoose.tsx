@@ -1,10 +1,11 @@
 import React from "react";
+import whyChooseImage from "../../assets/why-choose-image.jpg";
 
 const VirtualWhyChoose: React.FC = () => {
   return (
     <section
       className="relative h-[100vh] bg-cover bg-center bg-no-repeat flex items-center justify-center"
-      style={{ backgroundImage: "url('../src/assets/why-choose-image.jpg')" }}
+      style={{ backgroundImage: `url(${whyChooseImage})` }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
 

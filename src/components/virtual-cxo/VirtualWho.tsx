@@ -1,5 +1,10 @@
 // components/VirtualService.tsx
 import React from 'react';
+import whoIsImage from '../../assets/who-is-img.jpg'; 
+
+
+
+
 
 const VirtualWho: React.FC = () => {
   const points = [
@@ -28,7 +33,7 @@ const VirtualWho: React.FC = () => {
         {/* Right Column - Image */}
         <div className="flex justify-center">
           <img
-            src="../src/assets/who-is-img.jpg"
+            src={whoIsImage}
             alt="Virtual CFO Illustration"
             className="max-w-full h-auto rounded-xl shadow-lg"
           />

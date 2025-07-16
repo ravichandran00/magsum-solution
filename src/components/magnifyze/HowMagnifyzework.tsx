@@ -1,5 +1,5 @@
 import React from "react";
-
+import MAgsum from "../../assets/magnifyze-img-sticky.jpg";
 const HowMagnifyzeworkStatic = () => {
   const darkMode = false; // Toggle manually if needed
 
@@ -44,13 +44,13 @@ const HowMagnifyzeworkStatic = () => {
     >
       {/* Heading */}
       <div className="flex flex-col items-center gap-4 sm:gap-6 text-center max-w-[680px] mb-8 sm:mb-12">
-        <h3
-          className={`font-body text-[24px] sm:text-[32px] md:text-[40px] leading-tight ${
-            darkMode ? "text-primary-invert" : "text-darkteal-800"
+        <h2
+          className={`font-body text-2xl sm:text-2xl md:text-4xl font-semibold   leading-tight ${
+            darkMode ? "gradient-text" : "gradient-text"
           }`}
         >
           How Magnifyze Works
-        </h3>
+        </h2>
         <p
           className={`text-sm sm:text-base md:text-lg ${
             darkMode ? "text-secondary-invert" : "text-onyx-400"
@@ -66,7 +66,7 @@ const HowMagnifyzeworkStatic = () => {
         {/* Left: Image */}
         <div className="md:sticky md:top-[100px] md:self-start">
           <img
-            src="../src/assets/magnifyze-img-sticky.jpg"
+            src={MAgsum }
             alt="USP Illustration"
             className="rounded-xl w-full h-auto object-cover max-h-[600px]"
           />
